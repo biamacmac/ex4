@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+
+
+
+*{
+    
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+}
+
+header{
+    background-color: red;
+    margin: 0;
+    padding: 0.5em;
+    position: relative;
+    display: block;
+    
+    
+
+}
+
+/*-- barra menu--*/
+
+.side{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background: #262626;
+    width: 250px;
+    height: 50%;
+    transition: .3s;
+}
+
+.active{
+    left: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    padding: 10px 20px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.sidebar{
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #f5f5f5;
+    border: none;
+    outline: none;
+}
+
+.sidebar span{
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #262626;
+    position: absolute;
+    top: 24px;
+    transition: .3s;
+}
+
+.sidebar span:before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #262626;
+}
+
+.sidebar span:after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #262626;
+}
+
+.sidebar.toggle span{
+    background: transparent;
+}
+
+.sidebar.toggle span:before{
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.sidebar.toggle span:after{
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+
+
+
+/*LINK*/
+
+      a:link{
+        
+            font-family: "Alkalami", serif;
+                color: red;
+              }
+              a:visited{
+                    color: red;
+
+                      }
+                      a:active{
+                            color: red;
+
+                              }
+                              a:hover{
+                                    color: #FFF;
+
+                                      }
+
+/* -- body --*/
+
+
+
+
+body {
+   
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    line-height: 1.1em;
+    
+
+}
+
+h2{
+    font-family: "Alkalami", monospace;
+    font-weight: 900;
+    padding: 1em;
+    
+    
+}
+
+p{
+    padding: 1.5em;
+}
+
+
+
+
+main{
+    
+    position: relative;
+    display: block;
+
+ 
+
+    min-width: 40%;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+#intro{
+    margin-bottom: 6em;
+    background-color: rgba(255,255,255, 0.95);
+}
+
+#intro img{
+    width: 100%;
+    
+}
+
+#sinopse{
+margin-bottom: 6em;
+    background-color: rgba(255,255,255, 0.95);
+}
+
+/* FIM DIV DO BODY*/
+
+/* AVISO AMARELO*/
+#spoil{
+
+   background-color: rgba(255,255,255, 0.95);
+}
+.spoiler{
+    background-color: yellow;
+}
+
+.spoiler p{
+    font-family: "Alkalami", monospace;
+    font-weight: 700;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: -1em;
+}
+
+.spoiler p + p {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1em;
+
+}
+
+/*FIM DO AVISO*/
+/* IMAGEM BOTAO */
+
+.button3 {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  transition-duration: 0.4s;
+  cursor:pointer;
+    background-color: #000;
+}
+/* DIV ESCONDIDA*/
+.myDIV {
+  background-color: red;
+margin-bottom: 9em;
+    
+ 
+}
+
+
+
+/*bOtao refresh*/
+
+.button2 {
+  background-color: gray; 
+  color: white;
+     position: fixed;
+  bottom: 8px;
+  right: 16px;
+  transition-duration: 0.4s;
+  cursor:pointer;
+}
+
+
+.button2:hover {
+  background-color: black;
+  color: red;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+ /* footer*/
+
+li{
+    display: inline;
+    margin: 2em;
+    
+}
+
+
+
+
+
